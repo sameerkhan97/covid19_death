@@ -8,7 +8,7 @@ describe(data) # Hmisc command
 data$death_dummy <- as.integer(data$death != 0)
 # death rate
 sum(data$death_dummy) / nrow(data)
-
+ 
 # AGE
 # claim: people who die are older
 dead = subset(data, death_dummy == 1)
